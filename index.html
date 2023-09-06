@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind Demo</title>
+    <!-- <script type="module" src="tw.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        .tw-a {
+          @apply underline text-blue-600;
+        }
+      }
+    </style>
+  </head>
+  <body class="m-2">
+    <a href="header.html" class="tw-a">Header</a>
+  </body>
+</html>
